@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "8d8f9bfd-97f1-47f9-8308-28cdcacb9002",
+    "name": "Employee Engagement API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55601344",
+    "_collection_link": "https://go.postman.co/collection/55601344-8d8f9bfd-97f1-47f9-8308-28cdcacb9002?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Employee Responses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/employee/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/responses",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "employee",
+            "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "responses"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Submit Form Response",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"assignment_id\": \"b5999cbf-a72a-4aeb-9b94-99bbc665870e\",\n  \"responses\": [\n    { \"field_id\": \"f2000000-0000-0000-0000-000000000001\", \"value\": \"5\" },\n    { \"field_id\": \"f2000000-0000-0000-0000-000000000002\", \"value\": \"4\" },\n    { \"field_id\": \"f2000000-0000-0000-0000-000000000003\", \"value\": \"3\" },\n    { \"field_id\": \"f2000000-0000-0000-0000-000000000004\", \"value\": \"Overall great quarter!\" },\n    { \"field_id\": \"f2000000-0000-0000-0000-000000000005\", \"value\": \"Improve code review process\" }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/form-response",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "form-response"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
