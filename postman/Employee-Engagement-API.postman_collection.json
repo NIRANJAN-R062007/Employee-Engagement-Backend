@@ -16,12 +16,13 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3000/",
-          "protocol": "http",
+          "raw": "https://employee-engagement-backend.onrender.com/",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "employee-engagement-backend",
+            "onrender",
+            "com"
           ],
-          "port": "3000",
           "path": [
             ""
           ]
@@ -35,12 +36,13 @@
         "method": "GET",
         "header": [],
         "url": {
-          "raw": "http://localhost:3000/employee/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/responses",
-          "protocol": "http",
+          "raw": "https://employee-engagement-backend.onrender.com/employee/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/responses",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "employee-engagement-backend",
+            "onrender",
+            "com"
           ],
-          "port": "3000",
           "path": [
             "employee",
             "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
@@ -65,12 +67,13 @@
           }
         },
         "url": {
-          "raw": "http://localhost:3000/form-response",
-          "protocol": "http",
+          "raw": "https://employee-engagement-backend.onrender.com/form-response",
+          "protocol": "https",
           "host": [
-            "localhost"
+            "employee-engagement-backend",
+            "onrender",
+            "com"
           ],
-          "port": "3000",
           "path": [
             "form-response"
           ]
